@@ -1,0 +1,143 @@
+/* Importando uma fonte do site Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* delimitando como a página irá armazenar todo o conteudo */
+html{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #9840EA;
+}
+
+/* delimitando o tamanho do header para posteriormente personalizar a navBar */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    width: 50%;
+    height: 15vh;
+    margin-top: 20px;
+    background-color: #FFCD01;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.itens-nav{
+    text-decoration: none;
+    color: #9840EA;
+    font-weight: 800;
+    font-size: 17px;
+    border: 3px solid #9840EA;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* criando animações para uma experiência mais interativa */
+.itens-nav:hover{
+    background-color: #9840EA;
+    border-color: #FFCD01;
+    color: #FFCD01;
+    scale: 1.05;
+}
+
+/* delimitando uma formatação para várias classes (para que não ocorra repetição de código) */
+.sobre-mim, 
+.formacao,
+.portifolio,
+.contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10vh 0 10vh 0;
+}
+
+/* delimitanto formatação de textos principais */
+#textBemVindo{
+    font-size: 20px;
+}
+#bemVindo{
+    font-size: 5vh;
+}
+
+h1,
+h3{
+    color: #FFCD01;
+}
+
+p{
+    color: white;
+    width: 60%;
+    font-size: 17px;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+/* delimitando formatação padrão das main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 7px solid #FFCD01;
+    background-color: #552583;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6vh;
+    width: 60%;
+    height: 70vh;
+}
+
+/* delimitando formatação do link de acesso ao gitHub */
+
+#gitHub{
+    text-decoration: none;
+    color: #FFCD01;
+    border-color: #FFCD01;
+    border: 3px solid #FFCD01;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+#gitHub:hover{
+    scale: 1.05;
+}
+
+
+/* formatação geral de todos os inputs na pagina */
+input{
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 5px solid #FFCD01;
+    background-color: #9840EA;
+}
+
+input::placeholder{
+    color: black;
+}
+
+/* formatação e animação do botão de contato */
+
+button{
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFCD01;
+    color: #552583;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    scale: 1.05;
+}
